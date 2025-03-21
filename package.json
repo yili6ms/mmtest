@@ -1,0 +1,16 @@
+{
+  "name": "eletest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "electron": "^35.0.3"
+  }
+
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Mermaid Viewer</title>
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    window.mermaid = mermaid;
+    mermaid.initialize({ startOnLoad: false });
+  </script>
+</head>
+<body>
+  <h2>Mermaid Diagram</h2>
+  <button id="loadBtn">Load Mermaid File</button>
+  <div id="diagram" class="mermaid">Click "Load Mermaid File" to choose a file</div>
+
+  <script src="renderer.js" defer></script>
+</body>
+</html>
