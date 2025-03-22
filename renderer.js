@@ -12,3 +12,20 @@ button.addEventListener('click', async () => {
     diagramDiv.textContent = 'No file selected.';
   }
 });
+
+
+
+window.addEventListener('DOMContentLoaded', () => {
+  const diagram = document.getElementById('diagram');
+
+
+  // Wait a bit to let mermaid render, then enable zoom
+  setTimeout(() => {
+    const panzoom = Panzoom(diagram.parentElement, {
+      maxScale: 5,
+      minScale: 0.2,
+    });
+
+    diagram.parentElement.addEventListener('wheel', panzoom.zoomWithWheel);
+  }, 100);
+});

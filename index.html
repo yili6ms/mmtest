@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title>Mermaid Viewer</title>
+  <title>XPP Solution Viewer</title>
   <script type="module">
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
     window.mermaid = mermaid;
@@ -10,10 +10,13 @@
   </script>
 </head>
 <body>
-  <h2>Mermaid Diagram</h2>
-  <button id="loadBtn">Load Mermaid File</button>
-  <div id="diagram" class="mermaid">Click "Load Mermaid File" to choose a file</div>
+  <h2>XPP Solution Viewer</h2>
+  <button id="loadBtn">Load Solution File</button>
+  <hr>
+  <div id="diagram" class="mermaid">Click "Load Solution File" to choose a file</div>
 
   <script src="renderer.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@panzoom/panzoom/dist/panzoom.min.js"></script>
+
 </body>
 </html>

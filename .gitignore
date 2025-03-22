@@ -45,3 +45,64 @@ forge.config.js
 
 # Optional: If you package with Electron Builder
 build/
+
+
+## Build results
+bin/
+obj/
+out/
+temp/
+
+## VS Code
+.vscode/
+
+## Rider
+.idea/
+*.sln.iml
+
+## Visual Studio
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+project.lock.json
+project.fragment.lock.json
+
+## Logs
+*.log
+
+## Web/Node (if using Fable or JS interop)
+node_modules/
+dist/
+build/
+
+## Others
+*.dll
+*.exe
+*.pdb
+*.cache
+*.db
+*.bak
+
+## Environment files
+.env
+.env.*
+
+## OS generated
+.DS_Store
+Thumbs.db
+
+## Paket (if you're using Paket instead of NuGet)
+.paket/
+paket-files/
+paket.dependencies
+paket.lock
+
+## Dotnet CLI
+*.fsproj.user

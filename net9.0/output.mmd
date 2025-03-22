@@ -1,0 +1,84 @@
+```mermaid
+    classDiagram
+    class BusinessDocumentCacheIdentificationDataRender {
+    }
+    class BusinessDocumentDBKeyDataRender {
+    }
+    class BusinessDocumentFallbackCallControlContract {
+    }
+    class BusinessDocumentIdentificationIParser {
+    }
+    class BusinessDocumentIdentificationIRegister {
+    }
+    class BusinessDocumentIdentificationParser {
+    }
+    class BusinessDocumentIdentificationRegister {
+    }
+    class BusinessDocumentIFallbackableRender {
+    }
+    class BusinessDocumentIRenderProcessor {
+    }
+    class BusinessDocumentIRenderProcessorPump {
+    }
+    class BusinessDocumentIRenderProcessorPumpProvider {
+    }
+    class BusinessDocumentLegacyDataRender {
+    }
+    class BusinessDocumentRenderingPumpProvderTypeAttribute {
+    }
+    class BusinessDocumentRenderingPumpProvderTypePicker {
+    }
+    class BusinessDocumentRenderProcessor {
+    }
+    class BusinessDocumentRenderProcessorAbsPumpProvider {
+    }
+    class BusinessDocumentRenderProcessorDefaultPumpProvider {
+    }
+    class BusinessDocumentRenderProcessorLegacyPumpProvider {
+    }
+    class BusinessDocumentRenderProcessorPump {
+    }
+    class BusinessDocumentRenderProcessorPumpProviderFactory {
+    }
+    class BusinessDocumentServiceController {
+    }
+    class BusinessDocumentSubmissionController {
+    }
+    class BusinessDocumentSubmissionService {
+    }
+    class BusinessDocumentFallbackableCacheIdentificationRenderTest {
+    }
+    class BusinessDocumentFallbackableDBKeyDataRenderTest {
+    }
+    class BusinessDocumentFallbackableLegacyRenderTest {
+    }
+    class BusinessDocumentFallbackableRenderTestBase {
+    }
+    class BusinessDocumentSubmissionFormTest {
+    }
+    class ERForInvoicingActivities {
+    }
+    class ERForInvoicingInstrumentationConstants {
+    }
+
+    BusinessDocumentIFallbackableRender <|.. BusinessDocumentCacheIdentificationDataRender
+    BusinessDocumentIFallbackableRender <|.. BusinessDocumentDBKeyDataRender
+    BusinessDocumentIdentificationIParser <|.. BusinessDocumentIdentificationParser
+    BusinessDocumentIdentificationIRegister <|.. BusinessDocumentIdentificationRegister
+    BusinessDocumentIFallbackableRender <|.. BusinessDocumentLegacyDataRender
+    SysAttribute <|-- BusinessDocumentRenderingPumpProvderTypeAttribute
+    SysExtensionIAttribute <|.. BusinessDocumentRenderingPumpProvderTypeAttribute
+    BusinessDocumentIRenderProcessor <|.. BusinessDocumentRenderProcessor
+    BusinessDocumentIRenderProcessorPumpProvider <|.. BusinessDocumentRenderProcessorAbsPumpProvider
+    BusinessDocumentRenderProcessorAbsPumpProvider <|-- BusinessDocumentRenderProcessorDefaultPumpProvider
+    BusinessDocumentRenderProcessorAbsPumpProvider <|-- BusinessDocumentRenderProcessorLegacyPumpProvider
+    BusinessDocumentIRenderProcessorPump <|.. BusinessDocumentRenderProcessorPump
+    SysOperationServiceController <|-- BusinessDocumentSubmissionController
+    BatchRetryable <|.. BusinessDocumentSubmissionController
+    BusinessDocumentFallbackableRenderTestBase <|-- BusinessDocumentFallbackableCacheIdentificationRenderTest
+    BusinessDocumentFallbackableRenderTestBase <|-- BusinessDocumentFallbackableDBKeyDataRenderTest
+    BusinessDocumentFallbackableRenderTestBase <|-- BusinessDocumentFallbackableLegacyRenderTest
+    SysTestCase <|-- BusinessDocumentFallbackableRenderTestBase
+    SysTestCase <|-- BusinessDocumentSubmissionFormTest
+
+```
